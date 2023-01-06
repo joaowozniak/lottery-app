@@ -1,4 +1,4 @@
-package com.lotteryapp.model;
+package com.lotteryapp.dto;
 
 public class UserFixture {
     private String username = "a-username";
@@ -8,9 +8,9 @@ public class UserFixture {
         return this;
     }
 
-    public User build() {
-        User user = new User();
-        user.setUsername(username);
-        return user;
+    public UserDto build() {
+        UserDto userDto = new UserDto();
+        userDto.setUsername(username);
+        return userDto;
     }
 }

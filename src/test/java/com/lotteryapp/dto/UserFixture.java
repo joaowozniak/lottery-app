@@ -9,8 +9,9 @@ public class UserFixture {
     }
 
     public UserDto build() {
-        UserDto userDto = new UserDto();
-        userDto.setUsername(username);
+        var userDto = UserDto.builder()
+                .username(username)
+                .build();
         return userDto;
     }
 }

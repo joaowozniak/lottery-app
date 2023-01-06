@@ -23,7 +23,7 @@ public class UserRegistrationService {
         return userDto;
     }
 
-    private UserEntity requestUserDtoToEntity(RequestUserDto requestUserDto) {
+    protected UserEntity requestUserDtoToEntity(RequestUserDto requestUserDto) {
         var userEntity = new UserEntity();
         userEntity.setUsername(requestUserDto.getUsername());
         return userEntity;

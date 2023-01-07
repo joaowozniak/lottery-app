@@ -45,5 +45,4 @@ class UserRegistrationServiceTest {
         assertEquals(requestUserDto.getUsername(), savedUser.getUsername());
         assertEquals(savedUser.getUsername(), createdUser.getUsername());
     }
-
 }
